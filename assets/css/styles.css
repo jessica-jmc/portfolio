@@ -100,7 +100,7 @@ img{
   padding: 4rem 0 2rem;
 }
 
-.section-title, section-subtitle{
+.section-title, .section-subtitle{
   text-align: center;
 }
 
@@ -118,7 +118,7 @@ img{
 
 /*===== LAYOUT =====*/
 .bd-container{
-  max-width: 1024;
+  max-width: 1024px;
   width: calc(100% - 2rem);
   margin-left: var(--mb-2);
   margin-right: var(--mb-2);
@@ -257,7 +257,7 @@ background-color: var(--first-color-light);
   overflow: hidden;
 }
 
-.home_container{
+.home__container{
   position: relative;
   height: calc(100vh - var(--header-height));
   grid-template-rows: repeat(2, max-content);
@@ -290,11 +290,74 @@ background-color: var(--first-color-light);
   margin-bottom: var(--mb-3);
 }
 
-/*BUTTONS*/
+.home__img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
 
+.home__img img{
+  width: 240px;
+}
+
+.home__social{
+  display: flex;
+  flex-direction: column;
+}
+
+.home__social-icon{
+  width: max-content;
+  font-size: 1.3rem;
+  margin-bottom: var(--mb-2);
+  color: var(--first-color-lighten);
+}
+
+.home__social-icon:hover{
+  color: var(--first-color-light);
+}
+
+/*BUTTONS*/
+.button{
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--first-color-lighten);
+  padding: .75rem 1rem;
+  border-radius: .25rem;
+  transition: .3;
+}
+
+.button:hover{
+  background-color: var(--first-color-dark);
+}
+
+.button-light{
+  background-color: var(--first-color-light);
+}
 
 /*===== ABOUT =====*/
+.about__data{
+  text-align: center;
+}
 
+/*.about__description span{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--first-color);
+}
+  -------------------------------------------------------------------ERRO---------------------------------------------------------------------------
+*/
+
+.about__number{
+  font-size: var(--h1-font-size);
+  color: var(--first-color);
+  display: block;
+}
+
+.about__img{
+  justify-self: center;
+  width: 220px;
+  border-radius: .5rem;
+}
 
 /*===== QUALIFICATION =====*/
 
